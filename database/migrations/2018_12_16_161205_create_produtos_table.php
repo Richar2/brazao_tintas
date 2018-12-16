@@ -13,10 +13,20 @@ class CreateProdutosTable extends Migration
      */
     public function up()
     {
-        Schema::create('produtos', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
-        });
+        {
+            Schema::create('produtos', function (Blueprint $table) {
+                $table->increments('id');
+                $table->string('nome_pro',120);
+                $table->string('descricao_pro',350);
+                $table->decimal('quantidade_pro',5,2);
+                $table->decimal('peso_pro',5,2);
+                $table->decimal('altura_pro',5,2);
+                $table->decimal('largura_pro',5,2);
+                $table->decimal('profundidade_pro',5,2);
+                $table->timestamp('created_at')->nullable();
+                $table->timestamp('updated_at')->nullable();
+            });
+        }
     }
 
     /**
