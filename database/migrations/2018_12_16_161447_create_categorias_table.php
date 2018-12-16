@@ -14,7 +14,11 @@ class CreateCategoriasTable extends Migration
     public function up()
     {
         Schema::create('categorias', function (Blueprint $table) {
+           
+            
             $table->increments('id');
+            $table->string('nome_cat',120);
+            $table->string('descricao_cat',200);
             $table->timestamps();
         });
     }

@@ -14,7 +14,14 @@ class CreateImageneProductsTable extends Migration
     public function up()
     {
         Schema::create('imagene_products', function (Blueprint $table) {
+          
+           
             $table->increments('id');
+            $table->string('image1',180);
+            $table->string('image2',180);
+            $table->string('image3',180);
+            $table->string('image4',180);
+            $table->string('image5',180);
             $table->timestamps();
         });
     }

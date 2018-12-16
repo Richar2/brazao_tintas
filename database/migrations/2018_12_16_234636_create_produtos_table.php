@@ -15,7 +15,11 @@ class CreateProdutosTable extends Migration
     {
         {
             Schema::create('produtos', function (Blueprint $table) {
+          
+               
                 $table->increments('id');
+                $table->unsignedInteger('categoria_id');
+                $table->unsignedInteger('image_id');
                 $table->string('nome_pro',120);
                 $table->string('descricao_pro',350);
                 $table->decimal('quantidade_pro',5,2);
@@ -25,6 +29,10 @@ class CreateProdutosTable extends Migration
                 $table->decimal('profundidade_pro',5,2);
                 $table->timestamp('created_at')->nullable();
                 $table->timestamp('updated_at')->nullable();
+
+
+                $table->foreign('categoria_id')->references('id')->on('categorias')->onDelete ('cascade');
+                $table->foreign('image_id')->references('id')->on('imagene_products')-> onDelete ('cascade');
             });
         }
     }
