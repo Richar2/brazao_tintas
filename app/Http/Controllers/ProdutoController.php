@@ -9,7 +9,7 @@ class ProdutoController extends Controller
    
     public function produtosindex()
     {
-        return 'pag cadprodutos';
+        return view('components.cadprod');
     }
 
     

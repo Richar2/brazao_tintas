@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="ptbr">
 <head>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Document</title>
 </head>
+@yield('css-view')  
 <body>
+    <div class="container">
+        
+
+    @yield('conteudo-view')
     
+    </div>
+
+    @yield('css-view')  
+    <script ></script>
 </body>
 </html>
