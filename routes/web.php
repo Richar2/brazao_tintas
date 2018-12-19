@@ -11,6 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('admin/produtos','ProdutoController@produtosindex' )->name('admin.produto');
