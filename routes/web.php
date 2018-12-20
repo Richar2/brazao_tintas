@@ -12,3 +12,4 @@
 */
 
 Route::get('admin/produtos','ProdutoController@produtosindex' )->name('admin.produto');
+Route::post('admin/produtos/savecad','ProdutoController@produtoscreate' )->name('admin.savacad');

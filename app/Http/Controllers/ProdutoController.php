@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use app\Models\Produto;
+use app\Models\Categorias;
+use app\Models\ImageneProduct;
+use App\Models\Categorias;
 
 class ProdutoController extends Controller
 {
@@ -13,9 +17,27 @@ class ProdutoController extends Controller
     }
 
     
-    public function create()
+    public function produtoscreate(Request $request)
     {
-        //form aqui
+       $dataform=$request->all();
+      /*
+       $data['image']= $user->image;
+       if ($request->hasFile('image') && $request ->file('image')->isValid()){
+           if ($user->image)
+          $name=$user->image;
+            else {
+                $name=$user->id.kebab_case($user->name);
+            } 
+       }
+
+         */
+       $prod=  Produto::create($dataform);
+       $cat=   Categorias::create($dataform);
+       $image= ImageneProduct::create($dataform); 
+       
+       
+       //dd($dataform);
+        //return 'savecad';
     }
 
     public function store(Request $request)
