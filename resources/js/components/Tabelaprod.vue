@@ -43,9 +43,26 @@
 
 
 <script>
-    export default {
-        mounted() {
-            console.log('Component mounted.')
+    import axios from 'axios'
+
+    export default{
+        data(){
+            return{
+                tabelaprod:[],
+            }
+        },
+        created: function () {
+            this.getProdutos();
+        },
+        methods:{
+            getProdutos: function() {
+                var urlProdutos= 'componet.produtos';
+                axios.get(urlProdutos).then(resposnse=>{
+                    this.Produtos=response.data
+                });
+            }
         }
+
     }
+
 </script>

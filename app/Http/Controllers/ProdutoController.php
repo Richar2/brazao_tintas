@@ -14,10 +14,13 @@ class ProdutoController extends Controller
     
     public function tableProd()
     {
-       // return Produto::orderBy('id')->get();
-        return view('components.tabelaprod');
+       
+       return view('components.tabelaprod');
     }
-    
+    public function componetProd()
+    {
+       return Produto::orderBy('id', 'DESC')->get();
+    }
     
     
     

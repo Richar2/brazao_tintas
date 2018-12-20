@@ -14,3 +14,4 @@
 Route::get('admin/produtos/cadastro','ProdutoController@produtosindex' )->name('admin.produtocad');
 Route::post('admin/produtos/savecad','ProdutoController@produtoscreate' )->name('admin.savacad');
 Route::get('admin/produtos','ProdutoController@tableProd' )->name('admin.produtos');
+Route::get('admin/produtos','ProdutoController@componetProd' )->name('componet.produtos');
