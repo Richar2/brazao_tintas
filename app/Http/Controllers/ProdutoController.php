@@ -7,9 +7,22 @@ use app\Models\Produto;
 use app\Models\Categorias;
 use app\Models\ImageneProduct;
 
+
 class ProdutoController extends Controller
 {
    
+    
+    public function tableProd()
+    {
+       // return Produto::orderBy('id')->get();
+        return view('components.tabelaprod');
+    }
+    
+    
+    
+    
+    
+    
     public function produtosindex()
     {
         return view('components.cadprod');
