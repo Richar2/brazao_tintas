@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use app\Models\Produto;
 use app\Models\Categorias;
 use app\Models\ImageneProduct;
-use App\Models\Categorias;
 
 class ProdutoController extends Controller
 {
@@ -32,11 +31,11 @@ class ProdutoController extends Controller
 
          */
        $prod=  Produto::create($dataform);
-       $cat=   Categorias::create($dataform);
-       $image= ImageneProduct::create($dataform); 
+       //$cate=   Categorias::create($dataform);
+       //$image= ImageneProduct::create($dataform); 
        
        
-       //dd($dataform);
+       dd($dataform);
         //return 'savecad';
     }
 
