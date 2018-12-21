@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use app\Models\Produto;
 use app\Models\Categorias;
 use app\Models\ImageneProduct;
+use DB;
 
 
 class ProdutoController extends Controller
@@ -19,7 +20,7 @@ class ProdutoController extends Controller
     }
     public function componetProd()
     {
-       return Produto::orderBy('id', 'DESC')->get();
+       return $prod= DB::table('produtos')->get();
     }
     
     

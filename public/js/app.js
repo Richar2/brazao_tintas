@@ -47573,8 +47573,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         getProdutos: function getProdutos() {
             var _this = this;
 
-            var urlProdutos = 'admin.produtos';
-            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get(urlProdutos).then(function (resposnse) {
+            var urlProdutos = 'coponent_1';
+            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get(urlProdutos).then(function (response) {
                 _this.Produtos = response.data;
             });
         }

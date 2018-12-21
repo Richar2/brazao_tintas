@@ -56,8 +56,8 @@
         },
         methods:{
             getProdutos: function() {
-                var urlProdutos= 'componet.produtos';
-                axios.get(urlProdutos).then(resposnse=>{
+                var urlProdutos= 'coponent_1';
+                axios.get(urlProdutos).then(response=>{
                     this.Produtos=response.data
                 });
             }
