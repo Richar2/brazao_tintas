@@ -12,8 +12,8 @@
         </thead>
         <tbody>
             <tr v-for="produto in produtos">
-            <th >{{produto.id}}</th>
-            <td >{{produto.nome_pro}}</td>
+            <th>{{produto.id}}</th>
+            <td>{{produto.nome_pro}}</td>
             <td>Otto</td>
             <td>@mdo</td>
             </tr>
