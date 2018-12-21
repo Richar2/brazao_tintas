@@ -11,24 +11,13 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
+            <tr v-for="produto in produtos">
+            <th >{{produto.id}}</th>
+            <td >{{produto.nome_pro}}</td>
             <td>Otto</td>
             <td>@mdo</td>
             </tr>
-            <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            </tr>
-            <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            </tr>
+            
         </tbody>
         </table>
 
@@ -48,7 +37,7 @@
     export default{
         data(){
             return{
-                tabelaprod:[],
+                produtos:[],
             }
         },
         created: function () {
@@ -58,7 +47,7 @@
             getProdutos: function() {
                 var urlProdutos= 'coponent_1';
                 axios.get(urlProdutos).then(response=>{
-                    this.Produtos=response.data
+                    this.produtos=response.data
                 });
             }
         }
