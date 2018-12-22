@@ -47545,6 +47545,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -47595,7 +47597,7 @@ var render = function() {
             _vm._v(" "),
             _c("td", [_vm._v("Otto")]),
             _vm._v(" "),
-            _c("td", [_vm._v("@mdo")])
+            _vm._m(1, true)
           ])
         }),
         0
@@ -47617,6 +47619,16 @@ var staticRenderFns = [
         _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
         _vm._v(" "),
         _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", [
+      _c("a", { staticClass: "btn btn-danger btn-sm", attrs: { href: "#" } }, [
+        _vm._v("Aqui")
       ])
     ])
   }

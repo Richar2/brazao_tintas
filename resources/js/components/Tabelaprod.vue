@@ -15,7 +15,9 @@
             <th>{{produto.id}}</th>
             <td>{{produto.nome_pro}}</td>
             <td>Otto</td>
-            <td>@mdo</td>
+            <td>
+                <a href="#"class="btn btn-danger btn-sm">Aqui</a>
+            </td>
             </tr>
             
         </tbody>
