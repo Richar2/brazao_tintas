@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use app\Models\Produto;
-use app\Models\Categorias;
 use app\Models\ImageneProduct;
 use DB;
+use App\Models\Categorias;
+use App\Models\Produto;
 
 
 class ProdutoController extends Controller
@@ -15,12 +15,15 @@ class ProdutoController extends Controller
     
     public function tableProd()
     {
+        //$prod= Produto::get();    
+        //$cat= Categorias::get();
+       //return $prod;
        
        return view('components.tabelaprod');
     }
     public function componetProd()
     {
-       return $prod= DB::table('produtos')->get();
+       return  $prod= Produto::orderBy('id', 'DESC')->get();  
     }
     
     
