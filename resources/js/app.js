@@ -12,6 +12,8 @@ window.Vue = require('vue');
 
 
 Vue.component('tabelaprod', require('./components/Tabelaprod.vue'));
+Vue.component('tabelaprod', require('./components/editprod.vue'));
+
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key)))
