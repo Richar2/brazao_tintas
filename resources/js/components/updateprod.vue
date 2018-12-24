@@ -1,5 +1,13 @@
 <template>
-  
+<div class="modal fade" id="crete">
+
+
+
+
+</div>
+
+
+
 </template>
 
 <script>

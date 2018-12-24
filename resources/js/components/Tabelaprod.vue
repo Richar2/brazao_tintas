@@ -16,7 +16,7 @@
             <td>{{produto.nome_pro}}</td>
             <td>Otto</td>
             <td>
-                <a href="#"class="btn btn-danger btn-sm">Aqui</a>
+                <a href="#"class="btn btn-danger btn-sm">Editar</a>
             </td>
             </tr>
             
@@ -47,7 +47,7 @@
         },
         methods:{
             getProdutos: function() {
-                var urlProdutos= 'coponent_1';
+                var urlProdutos= 'tableprod';
                 axios.get(urlProdutos).then(response=>{
                     this.produtos=response.data
                 });
