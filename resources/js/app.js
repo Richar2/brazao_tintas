@@ -12,7 +12,7 @@ window.Vue = require('vue');
 
 
 Vue.component('tabelaprod', require('./components/Tabelaprod.vue'));
-Vue.component('tabelaprod', require('./components/editprod.vue'));
+Vue.component('updateprod', require('./components/updateprod.vue'));
 
 
 // const files = require.context('./', true, /\.vue$/i)
