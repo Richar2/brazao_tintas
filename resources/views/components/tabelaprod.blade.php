@@ -13,6 +13,8 @@
 
 <div id ="app">
 <tabelaprod></tabelaprod>
+<h1>aqui</h1>
+<updateprod></updateprod>
 </div>
 
 

@@ -47628,9 +47628,14 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("td", [
-      _c("a", { staticClass: "btn btn-danger btn-sm", attrs: { href: "#" } }, [
-        _vm._v("Editar")
-      ])
+      _c(
+        "a",
+        {
+          staticClass: "btn btn-danger btn-sm",
+          attrs: { href: "#", "data-toggle": "modal", "data-target": "#create" }
+        },
+        [_vm._v("Editar")]
+      )
     ])
   }
 ]
@@ -47692,10 +47697,8 @@ module.exports = Component.exports
 
 /***/ }),
 /* 44 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
@@ -47708,12 +47711,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    mounted: function mounted() {
-        console.log('Component mounted.');
-    }
-});
+//
+//
 
 /***/ }),
 /* 45 */
@@ -47723,7 +47722,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "modal fade", attrs: { id: "crete" } })
+  return _c("h1", [_vm._v("test")])
 }
 var staticRenderFns = []
 render._withStripped = true

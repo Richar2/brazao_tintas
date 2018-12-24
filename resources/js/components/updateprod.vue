@@ -1,19 +1,17 @@
 <template>
-<div class="modal fade" id="crete">
 
 
 
 
-</div>
+
+<h1>test</h1>
+
+
 
 
 
 </template>
 
 <script>
-    export default {
-        mounted() {
-            console.log('Component mounted.')
-        }
-    }
+  
 </script>
