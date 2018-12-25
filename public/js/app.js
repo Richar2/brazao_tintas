@@ -47724,6 +47724,19 @@ module.exports = Component.exports
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /***/ }),
 /* 45 */
@@ -47744,9 +47757,36 @@ var staticRenderFns = [
       _c("div", { staticClass: " modal-dialog" }, [
         _c("div", { staticClass: "modal-content" }, [
           _c("div", { staticClass: "modal-header" }, [
-            _c("button", {
-              staticClass: "close",
-              attrs: { type: "button", "data-dismiss": "modal" }
+            _c(
+              "button",
+              {
+                staticClass: "close",
+                attrs: { type: "button", "data-dismiss": "modal" }
+              },
+              [_c("span", [_vm._v("×")])]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "modal-body" }, [
+            _c("div", { staticClass: "col-xs-6 col-sm-6 col-md-6" }, [
+              _c("div", { staticClass: "form-group" }, [
+                _c("input", {
+                  staticClass: "form-control input-sm",
+                  attrs: {
+                    type: "text",
+                    name: "last_name",
+                    id: "last_name",
+                    placeholder: "Last Name"
+                  }
+                })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "modal-footer" }, [
+            _c("input", {
+              staticClass: "btn btn-primary",
+              attrs: { type: "submit", value: "Salvar" }
             })
           ])
         ])
