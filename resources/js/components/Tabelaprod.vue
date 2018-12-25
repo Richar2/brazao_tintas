@@ -16,7 +16,7 @@
             <td>{{produto.nome_pro}}</td>
             <td>Otto</td>
             <td>
-                <a href="#"class="btn btn-danger btn-sm" data-toggle="modal" data-target="#create" >Editar</a>
+                <a href="#" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#create" >Editar</a>
             </td>
             </tr>
             
