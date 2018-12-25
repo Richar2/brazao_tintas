@@ -1,6 +1,6 @@
 <template>
 <div class = "modal fade" id="create">
-     <div class=" modal-dialog">
+     <div class="modal-dialog modal-lg">
          <div class="modal-content">
              <div class="modal-header">
                  <button type="button" class="close" data-dismiss="modal">
@@ -9,11 +9,29 @@
                 
              </div>
              <div class="modal-body">
-             			    				<div class="col-xs-6 col-sm-6 col-md-6">
+             			    	
 			    					<div class="form-group">
-			    						<input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name">
+                         
+                                  <div class="form-row">
+                                    <div class="col-7">
+                                      <input type="text" class="form-control" placeholder="First name">
+                                    </div>
+                                    <div class="col">
+                                      <input type="text" class="form-control" placeholder="Last name">
+                                    </div>
+                                  </div>
+                                
 			    					</div>
+                                <div class=" col-xs-6 ">
+			    					<div class="form-group">
+                                        <input type="text" name="last_name" id="last_name" class="form-control-sm " placeholder="Last Name">
+                                    </div>
 			    				</div>
+             
+             
+             
+             
+             
              </div>
              <div class="modal-footer">
                  <input type="submit" class="btn btn-primary" value="Salvar">
@@ -27,15 +45,12 @@
 
 
 
-
-
-
-
-
-
-
 </template>
+
+
+
 
 <script>
   
 </script>
+
