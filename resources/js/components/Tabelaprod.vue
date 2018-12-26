@@ -16,7 +16,7 @@
             <td>{{produto.nome_pro}}</td>
             <td>Otto</td>
             <td>
-                <a href="#" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#create" >Editar</a>
+                <a href="#" class="btn btn-danger btn-sm" v-on:click.prevent="editprod(produto)">Editar</a>
             </td>
             </tr>
             
@@ -40,6 +40,7 @@
         data(){
             return{
                 produtos:[],
+                fillproduto:{'id':'','nome_pro':'','descricao_pro':'' },  
             }
         },
         created: function () {
@@ -51,7 +52,14 @@
                 axios.get(urlProdutos).then(response=>{
                     this.produtos=response.data
                 });
+            },
+             editprod:function(produto){
+             this.fillproduto.id= produto.id;
+             this.fillproduto.nome_pro=produto.nome_pro;
+             $('#edit').modal('show');
+            
             }
+        
         }
 
     }

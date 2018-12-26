@@ -1,5 +1,7 @@
 <template>
-<div class = "modal fade" id="create">
+
+<form method="POST" v-on:submit.prevent="updateprod(fillproduto.id)">
+<div class = "modal fade" id="edit">
      <div class="modal-dialog modal-lg">
          <div class="modal-content">
              <div class="modal-header">
@@ -10,31 +12,28 @@
              </div>
               <div class="modal-body">
              			    	
-			    					<div class="form-group">
-                         
+
+
+
+			    				<div class="form-group">
                                   <div class="form-row">
                                     <div class="col-7">
-                                      <input type="text" class="form-control" placeholder="First name">
+                                      <input type="text" name="nome_pro" class="form-control"  v-model="fillproduto.nome_pro">
                                     </div>
                                     <div class="col">
-                                      <input type="text" class="form-control" placeholder="Last name">
+                                      <input type="text" name="descricao_pro" class="form-control"  v-model="fillproduto.descricao_pro" >
                                     </div>
                                   </div>
                                 
 			    					</div>
-                                <div class=" col-xs-6 ">
-			    					<div class="form-group">
-                                        <input type="text" name="last_name" id="last_name" class="form-control-sm " placeholder="Last Name">
-                                    </div>
-			    				</div>
-             
+                                
              
              
              
              
              </div>
              <div class="modal-footer">
-                 <input type="submit" class="btn btn-primary" value="Salvar">
+                 <input type="submit" class="btn btn-primary" value="Atualizar">
 
            </div> 
          </div>
@@ -42,7 +41,7 @@
      </div>
 
 </div>
-
+</form>
 
 
 </template>
@@ -51,6 +50,28 @@
 
 
 <script>
-  
-</script>
+    import axios from 'axios'
+
+    export default{
+        data(){
+            return{
+                
+                fillproduto:{'id':'','nome_pro':'','descricao_pro':'' },  
+            }
+        },
+
+        methods:{
+           
+             editprod:function(produto){
+             this.fillproduto.id= produto.id;
+             this.fillproduto.nome_pro=produto.nome_pro;
+             $('#edit').modal('show');
+            
+            }
+        
+        }
+
+    }
+ 
+ </script>
 
