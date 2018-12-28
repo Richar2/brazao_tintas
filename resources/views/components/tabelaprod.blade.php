@@ -24,7 +24,7 @@
             <tr v-for="produto in produtos">
             <th>@{{produto.id}}</th>
             <td>@{{produto.nome_pro}}</td>
-            <td>Otto</td>
+            <td>@{{produto.descricao_pro}}</td>
             <td>
                 <a href="#" class="btn btn-danger btn-sm" v-on:click.prevent="editprod(produto)">Editar</a>
             </td>

@@ -23,6 +23,7 @@ new Vue({
          editprod:function(produto){
          this.fillproduto.id= produto.id;
          this.fillproduto.nome_pro=produto.nome_pro;
+         this.fillproduto.descricao_pro=produto.descricao_pro;
          $('#edit').modal('show');
         
         }
