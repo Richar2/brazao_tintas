@@ -26,8 +26,27 @@ new Vue({
          this.fillproduto.descricao_pro=produto.descricao_pro;
          $('#edit').modal('show');
         
-        }
+        },
+      /* updat:function(id){
+           var url='updateprod/'+ id;
+           axios.put(url, this.fillproduto).then(response=>{
+              this.getProdutos();
+              this.fillproduto={'id':'','nome_pro':'','descricao_pro':'' };
+              $('#edit').modal('toggle');
+           });
+        },*/
     
+      updat:function(id){
+          var url='updateprod/'+ id;  
+         axios.put(url,  this.fillproduto).then(response=>{
+             
+            this.getProdutos();
+            this.fillproduto={'id':'','nome_pro':'','descricao_pro':'' };
+            $('#edit').modal('hide');
+         
+        });
+         
+        }
     }
   });
 

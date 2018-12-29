@@ -15,4 +15,4 @@ Route::get('admin/produtos/{id}/cadastro','ProdutoController@produtosindex' )->n
 Route::post('admin/produtos/savecad','ProdutoController@produtoscreate' )->name('admin.savacad');
 Route::get('admin/produtos','ProdutoController@tableProd' )->name('admin.produtos');
 Route::get('admin/tableprod','ProdutoController@componetProd' )->name('componet_1.produtos');
-Route::get('admin/updateprod','ProdutoController@updateProd' )->name('componet_2.produtos');
+Route::put('admin/updateprod/{id}','ProdutoController@updateProd' )->name('componet_2.produtos');

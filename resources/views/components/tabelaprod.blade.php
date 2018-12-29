@@ -33,16 +33,16 @@
         </tbody>
         </table>
         @include('components.modais')
-     <div class="col-sm-5">
-     <pre>
-        @{{ $data }}
-     </pre>
-     </div> 
        
 
     </div>
  
-
+    <div class="col-sm-5">
+     <pre>
+         @{{ $data }}
+     </pre>
+    
+        </div> 
 
 
 
