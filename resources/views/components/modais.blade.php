@@ -10,7 +10,7 @@
     </div>
     <div class="modal-body">
         <div class="form-group"> 
-        <div class="form-row">
+           <div class="form-row">
              <div class="col-7">
                   <input type="text" name="nome_pro" class="form-control"  v-model="fillproduto.nome_pro">
               </div>
@@ -18,8 +18,8 @@
                   <input type="text" name="descricao_pro" class="form-control" v-model="fillproduto.descricao_pro">
               </div>
                                 
+              </div>
         </div>
-    </div>
     
     <div class="modal-footer">
         <input type="submit" class="btn btn-primary" value="Atualizar">
