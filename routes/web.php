@@ -13,7 +13,8 @@
 
 Route::get('admin/produtos/cadastro','ProdutoController@produtosindex' )->name('admin.produtocad');
 Route::post('admin/produtos/savecad','ProdutoController@produtoscreate' )->name('admin.savacad');
-Route::get('admin/produtos/savecli','ClientesController@create' )->name('admin.savacad');
+Route::get('admin/produtos/new_cadastro','ClientesController@create' )->name('admin.savacad');
+Route::post('admin/produtos/savecli','ClientesController@saveCli' )->name('admin.savacad');
 Route::get('admin/produtos','ProdutoController@tableProd' )->name('admin.produtos');
 Route::get('admin/tableprod','ProdutoController@componetProd' )->name('componet_1.produtos');
 Route::put('admin/updateprod/{id}','ProdutoController@updateProd' )->name('componet_2.produtos');
