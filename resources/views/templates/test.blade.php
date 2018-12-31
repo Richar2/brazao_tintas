@@ -6,6 +6,7 @@
       
     <title>Document</title>
     <!--<link rel="stylesheet" href="{{asset ('css/app.css')}}">-->
+    <link rel="stylesheet" href="{{asset ('css/componetes.css')}}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" >
 </head>
 @yield('css-view')  

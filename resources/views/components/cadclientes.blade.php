@@ -8,28 +8,35 @@
 @endsection        
 
 @section('conteudo-view')
-<div class="panel-body">
+
+<div id="box1" class="container">
+<h1>Dados Pessoais</h1>
 {!!Form::open(['route'=>'admin.savacad','method'=>'post']) !!}
              {{ csrf_field() }}
-           
-           
-            <label class="col-md-2">Nome
-               {!!Form::text('peso_pro',null,['class="form-control"'=>'input', 'placeholder'=>"Seu nome aqui"])!!} 
+
+            <label class="col-md-5">Nome
+               {!!Form::text('peso_pro',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
             </label>
-            <label class="col-md-2">Sobrenome
-               {!!Form::text('peso_pro',null,['class="form-control"'=>'input', 'placeholder'=>"Seu sobrenome aqui"])!!} 
+            <label class="col-md-5">Sobrenome
+               {!!Form::text('peso_pro',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
             </label>
-            <label class="col-md-2">Data de nascimento
-               {!!Form::text('peso_pro',null,['class="form-control"'=>'input', 'placeholder'=>"Data de nascimento"])!!} 
+            <label class="col-md-5">Data de nascimento
+               {!!Form::text('peso_pro',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
             </label>
-            <label class="col-md-2">CPF
+            <label class="col-md-5">CPF
                {!!Form::text('peso_pro',null,['class="form-control"'=>'input', 'placeholder'=>"ex:111.111.111-00"])!!} 
             </label>
-            <label class="col-md-2">Telefone-1
-               {!!Form::text('peso_pro',null,['class="form-control"'=>'input', 'placeholder'=>"Telefone-1"])!!} 
+            <label class="col-md-5">CPF
+               {!!Form::text('peso_pro',null,['class="form-control"'=>'input', 'placeholder'=>"ex:111.111.111-00"])!!} 
             </label>
-            <label class="col-md-2">Telefone-2
-               {!!Form::text('peso_pro',null,['class="form-control"'=>'input', 'placeholder'=>"Telefone-2"])!!} 
+            <label class="col-md-5">CPF
+               {!!Form::text('peso_pro',null,['class="form-control"'=>'input', 'placeholder'=>"ex:111.111.111-00"])!!} 
+            </label>
+            <label class="col-md-4">Telefone-1
+               {!!Form::text('peso_pro',null,['class="form-control"'=>'input', 'placeholder'=>"Telefone Fixo"])!!} 
+            </label>
+            <label class="col-md-4">Telefone-2
+               {!!Form::text('peso_pro',null,['class="form-control"'=>'input', 'placeholder'=>"Telefone Celular"])!!} 
             </label>
             <label class="col-md-2">Peso
                {!!Form::text('peso_pro',null,['class="form-control"'=>'input', 'placeholder'=>"Peso"])!!} 

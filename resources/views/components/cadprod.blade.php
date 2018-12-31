@@ -8,7 +8,9 @@
 @endsection        
 
 @section('conteudo-view')
+
 <div class="panel-body">
+
    
        {!!Form::open(['route'=>'admin.savacad','method'=>'post']) !!}
              {{ csrf_field() }}
