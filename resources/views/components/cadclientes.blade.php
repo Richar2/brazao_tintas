@@ -86,13 +86,13 @@
                         {!!Form::text('email',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
             </label>
             <label class="col-md-5">Confirmar e-mail:
-                        {!!Form::text('peso_pro',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
+                        {!!Form::text('email',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
             </label> 
             <label class="col-md-5">Senha:
                         {!!Form::text('senha',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
             </label>
             <label class="col-md-5">Confirmar senha:
-                        {!!Form::text('peso_pro',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
+                        {!!Form::text('senha',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
             </label>             
 
       </div>

@@ -31,8 +31,7 @@ class CreateProdutosTable extends Migration
                 $table->timestamp('updated_at')->nullable();
 
 
-                $table->foreign('categoria_id')->references('id')->on('categorias')->onDelete ('cascade');
-                $table->foreign('image_id')->references('id')->on('imagene_products')-> onDelete ('cascade');
+                
             });
         }
     }
@@ -47,3 +46,8 @@ class CreateProdutosTable extends Migration
         Schema::dropIfExists('produtos');
     }
 }
+
+
+
+//$table->foreign('categoria_id')->references('id')->on('categorias')->onDelete ('cascade');
+                //$table->foreign('image_id')->references('id')->on('imagene_products')-> onDelete ('cascade');
