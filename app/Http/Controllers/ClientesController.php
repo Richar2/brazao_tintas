@@ -35,7 +35,7 @@ class ClientesController extends Controller
     public function saveCli(Request $request)
     {
         $form = $request->except(['_token']);
-        
+        dd($form);
     }
 
 

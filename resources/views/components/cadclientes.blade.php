@@ -9,7 +9,7 @@
 
 @section('conteudo-view')
 <div id="box0" class="container">
-{!!Form::open(['route'=>'admin.savacad','method'=>'post']) !!}
+{!!Form::open(['route'=>'savacli','method'=>'post']) !!}
 
 <div id="box1" class="container">
      <h1>Dados Pessoais</h1>
@@ -98,7 +98,7 @@
       </div>
       
                         <label>
-                           {!!Form::submit('Click Me!')!!}         
+                           {!!Form::submit('Salvar')!!}         
                         </label>       
       
       
