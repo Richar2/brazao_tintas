@@ -6,7 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Acessocliente extends Model
 {
-    protected $fillable=[];
+    protected $fillable=[
+        'email',
+        'senha'  
+    ];
     
     public function cliente(){
        

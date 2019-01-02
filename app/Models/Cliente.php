@@ -6,7 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cliente extends Model
 {
-    protected $fillable=[];
+    protected $fillable=[
+    'nome',
+    'sobrenome',
+    'sexo',
+    'data_nascimento',
+    'cpf',
+    'telefone_fixo',
+    'telefone_cel'];
     
     
     public function acesso(){
