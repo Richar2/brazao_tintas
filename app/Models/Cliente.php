@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cliente extends Model
 {
+    protected $primaryKey = 'id';
     protected $fillable=[
     'nome',
     'sobrenome',
@@ -16,9 +17,9 @@ class Cliente extends Model
     'telefone_cel'];
     
     
-    public function acesso(){
+    public function acessocliente(){
         
-        return $this->belongsTo(Acessocliente::class);
+        return $this->belongsTo(Acessocliente::class,  'acesso_id', 'id');
     }
     public function endereco(){
         

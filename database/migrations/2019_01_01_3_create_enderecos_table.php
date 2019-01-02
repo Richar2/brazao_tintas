@@ -15,7 +15,6 @@ class CreateEnderecosTable extends Migration
     {
         Schema::create('enderecos', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('cliente_id');
             $table->string('nome_endereco',100);
             $table->string('endereco',100);
             $table->string('referencia',100);
@@ -27,6 +26,8 @@ class CreateEnderecosTable extends Migration
             $table->bigInteger('cep');
             $table->timestamps();
 
+            
+            $table->unsignedInteger('cliente_id')->nullable();
             $table->foreign('cliente_id')->references('id')->on('clientes')->onDelete ('cascade');
         });
     }

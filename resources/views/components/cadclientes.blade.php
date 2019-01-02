@@ -14,7 +14,7 @@
 <div id="box1" class="container">
      <h1>Dados Pessoais</h1>
 
-                     {{ csrf_field() }}
+     {!! csrf_field() !!}
 
 
 
@@ -38,7 +38,7 @@
                         {!!Form::text('telefone_fixo',null,['class="form-control"'=>'input', 'placeholder'=>"Telefone Fixo"])!!} 
                      </label>
                      <label class="col-md-4">Telefone Celular
-                        {!!Form::text('telefone_celular',null,['class="form-control"'=>'input', 'placeholder'=>"Telefone Celular"])!!} 
+                        {!!Form::text('telefone_cel',null,['class="form-control"'=>'input', 'placeholder'=>"Telefone Celular"])!!} 
                      </label>
                   
             
@@ -85,15 +85,15 @@
             <label class="col-md-5">E-mail:
                         {!!Form::text('email',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
             </label>
-            <label class="col-md-5">Confirmar e-mail:
+          <!--  <label class="col-md-5">Confirmar e-mail:
                         {!!Form::text('email',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
-            </label> 
+            </label> -->
             <label class="col-md-5">Senha:
                         {!!Form::text('senha',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
             </label>
-            <label class="col-md-5">Confirmar senha:
+            <!--<label class="col-md-5">Confirmar senha:
                         {!!Form::text('senha',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
-            </label>             
+            </label> -->            
 
       </div>
       

@@ -40,16 +40,22 @@ class ClientesController extends Controller
      */
     public function saveCli(Request $request)
     {
-        $form = $request->except(['_token']);
-       
-        $acesso = Acessocliente::create($form);
-        $endereco = Endereco::create($form);
-        $cliente = Cliente::create($form);
+        //$form = $request->all();
         
-        $cliente->acesso()->associate($acesso);
-        $cliente->endereco()->associate($endereco);
-        $clinico->save();
+        $form = $request->except(['_token']);
+        $acesso = Acessocliente::create($form);
+        $cliente = Cliente::create($form);
+        $endereco= Endereco::create($form);
+        
+        
+        
+      
+        
+        $cliente->acessocliente()->associate($acesso);
+        $endereco->cliente()->associate($cliente);
        
+        $cliente->save();
+        $endereco->save();
         
         //dd($form);
     }
@@ -80,7 +86,8 @@ class ClientesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $upform=['estado','email','nome'];
+
     }
 
     /**

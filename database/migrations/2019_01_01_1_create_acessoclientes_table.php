@@ -15,7 +15,7 @@ class CreateAcessoclientesTable extends Migration
     {
         Schema::create('acessoclientes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('email',150)->unique();
+            $table->string('email',150);
             $table->string('senha',150);
             $table->timestamps();
         });

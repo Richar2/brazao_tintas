@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Acessocliente extends Model
 {
+    protected $primaryKey = 'id';
     protected $fillable=[
         'email',
         'senha'  
