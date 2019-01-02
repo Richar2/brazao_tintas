@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Acessocliente;
+use App\Models\Endereco;
+use App\Models\Cliente;
 
 
 
@@ -39,9 +42,16 @@ class ClientesController extends Controller
     {
         $form = $request->except(['_token']);
        
-       ende
+        $acesso = Acessocliente::create($form);
+        $endereco = Endereco::create($form);
+        $cliente = Cliente::create($form);
+        
+        $cliente->acesso()->associate($acesso);
+        $cliente->endereco()->associate($endereco);
+        $clinico->save();
        
-        dd($form);
+        
+        //dd($form);
     }
 
 

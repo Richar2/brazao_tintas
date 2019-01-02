@@ -15,7 +15,7 @@ class CreateClientesTable extends Migration
     {
         Schema::create('clientes', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('acesso_id');
+            $table->unsignedInteger('acessocliente_id');
             $table->string('nome', 100);
             $table->string('sobrenome', 100);
             $table->boolean('sexo');
@@ -26,7 +26,7 @@ class CreateClientesTable extends Migration
             $table->timestamps();
 
 
-            $table->foreign('acesso_id')->references('id')->on('acessoclientes')->onDelete ('cascade');
+            $table->foreign('acessocliente_id')->references('id')->on('acessoclientes')->onDelete ('cascade');
             
         });
     }
