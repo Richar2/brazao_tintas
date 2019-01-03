@@ -19,3 +19,6 @@ Route::get('/updatecli','ClientesController@update' )->name('updatecli');
 Route::get('admin/produtos','ProdutoController@tableProd' )->name('admin.produtos');
 Route::get('admin/tableprod','ProdutoController@componetProd' )->name('componet_1.produtos');
 Route::put('admin/updateprod/{id}','ProdutoController@updateProd' )->name('componet_2.produtos');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

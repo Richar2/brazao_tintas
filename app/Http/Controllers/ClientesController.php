@@ -92,7 +92,7 @@ class ClientesController extends Controller
         $upform=$endereco ->find(1);
         $cli=$cliente->find($upform->cliente_id);
         $upform->estado='Maranhão';
-        $cli->nome='Carlos';
+        $cli->nome='Richard';
         //$upform->cliente_id
         //$cliente_id =$endereco->cliente_id;
         //dd( $upform->cliente_id);
