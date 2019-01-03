@@ -84,10 +84,27 @@ class ClientesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update( Endereco $endereco ,Cliente $cliente, Acessocliente $acesso)
     {
-        $upform=['estado','email','nome'];
-
+        
+        
+       
+        $upform=$endereco ->find(1);
+        $cli=$cliente->find($upform->cliente_id);
+        $upform->estado='Maranhão';
+        $cli->nome='Carlos';
+        //$upform->cliente_id
+        //$cliente_id =$endereco->cliente_id;
+        //dd( $upform->cliente_id);
+       // $cliente->acessocliente()->associate($acesso);
+      
+        
+        $cli->save();
+        $upform->save();
+    
+    
+    
+    
     }
 
     /**

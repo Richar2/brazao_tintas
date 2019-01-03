@@ -15,6 +15,7 @@ Route::get('admin/produtos/cadastro','ProdutoController@produtosindex' )->name('
 Route::post('admin/produtos/savecad','ProdutoController@produtoscreate' )->name('admin.savacad');
 Route::get('index/login/new_cadastro','ClientesController@create')->name('cadcli');
 Route::post('/savecli','ClientesController@saveCli' )->name('savacli');
+Route::get('/updatecli','ClientesController@update' )->name('updatecli');   
 Route::get('admin/produtos','ProdutoController@tableProd' )->name('admin.produtos');
 Route::get('admin/tableprod','ProdutoController@componetProd' )->name('componet_1.produtos');
 Route::put('admin/updateprod/{id}','ProdutoController@updateProd' )->name('componet_2.produtos');
