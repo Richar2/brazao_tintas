@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\CarrinhoController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +16,8 @@
 Route::get('admin/produtos/cadastro','ProdutoController@produtosindex' )->name('admin.produtocad');
 Route::post('admin/produtos/savecad','ProdutoController@produtoscreate' )->name('admin.savacad');
 Route::get('index/login/new_cadastro','ClientesController@create')->name('cadcli');
+Route::get('carrinho', 'CarrinhoController@getproduto');
+
 Route::post('/savecli','ClientesController@saveCli' )->name('savacli');
 Route::get('/updatecli','ClientesController@update' )->name('updatecli');   
 Route::get('admin/produtos','ProdutoController@tableProd' )->name('admin.produtos');
