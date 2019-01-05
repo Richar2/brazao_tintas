@@ -42,12 +42,12 @@ new Vue({
              
             this.getProdutos();
             this.fillproduto={'id':'','nome_pro':'','descricao_pro':'' };
-            $('#edit').modal('hide');
+            .catch(error => { $('#edit').modal('toggle'); });
          
         });
          
         }
-        .catch(error => { $('#edit').modal('hide'); })
+       
     }
   });
 

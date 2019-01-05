@@ -12708,14 +12708,12 @@ new Vue({
              
             this.getProdutos();
             this.fillproduto={'id':'','nome_pro':'','descricao_pro':'' };
-            $('#edit').modal('hide');
-            toastr.success('Nueva tarea creada con éxito');
-        }).catch(error => {
-            this.errors = 'Corrija para poder crear con éxito'
-        }); 
-        
+           this.catch(error => { $('#edit').modal('toggle'); });
+         
+        });
          
         }
+       
     }
   });
 
