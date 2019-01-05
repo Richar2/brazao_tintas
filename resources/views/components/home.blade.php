@@ -21,18 +21,22 @@
             </tr>
         </thead>
         <tbody>
-           
+            @foreach($produtos as $produto)
             <tr>
             <th></th>
-            <td>{{$produtos}}</td>
+            <td>{{$produto->nome_pro}}</td>
             <td></td>
             <td>
-                <a href="" class="btn btn-danger btn-sm" >Comprar</a>
+                <a href="{{route('carrinho',$produto->id)}}" class="btn btn-danger btn-sm" >Comprar</a>
             </td>
             </tr>
-            
+            @endforeach
         </tbody>
         </table>
+
+
+
+
 
 
 @endsection 

@@ -1,5 +1,6 @@
         
 <form method="POST" v-on:submit.prevent="updat(fillproduto.id)">
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <div class="modal fade" id="edit">
 	<div class="modal-dialog">
 		<div class="modal-content">

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Produto;
 
 class SiteController extends Controller
 {
@@ -11,9 +12,25 @@ class SiteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    private $produto; 
+    public function __construct(Produto $produto)
     {
-        //
+        $this->Produto=$produto; 
+    
+    }
+    
+     public function index(){
+
+         
+        $produtos=$this->Produto->all();  
+       //dd($produtos);
+
+    
+        
+        
+        
+        
+        return view('components.home',compact('produtos'));
     }
 
     /**
@@ -81,4 +98,5 @@ class SiteController extends Controller
     {
         //
     }
+
 }

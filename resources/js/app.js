@@ -47,6 +47,7 @@ new Vue({
         });
          
         }
+        .catch(error => { $('#edit').modal('hide'); })
     }
   });
 

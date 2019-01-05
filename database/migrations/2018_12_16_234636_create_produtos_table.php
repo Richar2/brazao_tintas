@@ -18,15 +18,15 @@ class CreateProdutosTable extends Migration
           
                
                 $table->increments('id');
-                $table->unsignedInteger('categoria_id');
-                $table->unsignedInteger('image_id');
-                $table->string('nome_pro',120);
-                $table->string('descricao_pro',350);
-                $table->decimal('quantidade_pro',5,2);
-                $table->decimal('peso_pro',5,2);
-                $table->decimal('altura_pro',5,2);
-                $table->decimal('largura_pro',5,2);
-                $table->decimal('profundidade_pro',5,2);
+                $table->unsignedInteger('categoria_id')->nullable();
+                $table->unsignedInteger('image_id')->nullable();
+                $table->string('nome_pro',120)->nullable();
+                $table->string('descricao_pro',350)->nullable();
+                $table->decimal('quantidade_pro',5,2)->nullable();
+                $table->decimal('peso_pro',5,2)->nullable();
+                $table->decimal('altura_pro',5,2)->nullable();
+                $table->decimal('largura_pro',5,2)->nullable();
+                $table->decimal('profundidade_pro',5,2)->nullable();
                 $table->timestamp('created_at')->nullable();
                 $table->timestamp('updated_at')->nullable();
 

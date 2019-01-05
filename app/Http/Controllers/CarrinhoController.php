@@ -15,12 +15,11 @@ class CarrinhoController extends Controller
   
   
   
-    public function getproduto()
+    public function getproduto($id)
    {
-     
-    $nome='Richard';
+    $produtos=$id;
     
-    
-    return view('components.carrinho',compact 'nome' );
+    //dd($id);
+    return view('components.carrinho',compact ('produtos'));
    }
 }
