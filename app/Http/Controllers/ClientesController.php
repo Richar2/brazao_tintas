@@ -14,7 +14,7 @@ class ClientesController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
+     *a
      * @return \Illuminate\Http\Response
      */
     public function index()
