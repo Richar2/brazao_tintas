@@ -42,13 +42,15 @@ new Vue({
              
             this.getProdutos();
             this.fillproduto={'id':'','nome_pro':'','descricao_pro':'' };
-            .catch(error => { $('#edit').modal('toggle'); });
-         
+            $('#edit').modal('toggle');
+            
         });
-         
-        }
+        console.log(url);
+
+        } 
+
        
     }
+    
   });
-
-
+ 

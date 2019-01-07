@@ -78,7 +78,13 @@ class ProdutoController extends Controller
     
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request,[
+            'nome_pro'=>'required',
+            'descricao_pro'=>'required'
+        ]);
+       Produto::find($id)->update($request->all());  
+       return;  
+
     }
 
     

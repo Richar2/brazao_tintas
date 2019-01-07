@@ -37,7 +37,7 @@
 
     </div>
  
-    <div class="col-sm-5">
+    <div  class="container">
      <pre>
          @{{ $data }}
      </pre>
