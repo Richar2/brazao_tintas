@@ -15,7 +15,7 @@ use App\Http\Controllers\CarrinhoController;
 Route::get('admin/produtos/cadastro','ProdutoController@produtosindex' )->name('admin.produtocad');
 Route::post('admin/produtos/savecad','ProdutoController@produtoscreate' )->name('admin.savacad');
 Route::get('index/login/new_cadastro','ClientesController@create')->name('cadcli');
-
+Route::get('home','HomerControllerller@home')->name('home');
 Route::get('','SiteController@index');
 Route::get('carrinho/{id}/', 'CarrinhoController@getproduto')->name('carrinho');
 

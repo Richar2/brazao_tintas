@@ -8,6 +8,6 @@ class HomerControllerller extends Controller
 {
     public function home()
     {
-       return view('components.home');
+       return view('templates.home');
     }
 }
