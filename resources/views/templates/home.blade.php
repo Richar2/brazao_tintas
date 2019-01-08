@@ -6,13 +6,15 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{asset ('fontawesome-free-5.6.3-web/css/all.min.css')}}">
+    <link rel="stylesheet" href="{{asset ('/css/template.css')}}">
     <script src="main.js"></script>
 </head>
 <body>
-    <nav>
+   <div class="cabecalho">
+   </div>
     
-    </nav>
-    <nav>
+    
+    <nav class="menu">
     <ul>
     <li>
                     
@@ -28,5 +30,6 @@
     <ul>
     
     </nav>
+    
 </body>
 </html>
