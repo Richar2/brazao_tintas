@@ -6,17 +6,19 @@
       
     <title>Document</title>
     <!--<link rel="stylesheet" href="{{asset ('css/app.css')}}">-->
-    <link rel="stylesheet" href="{{asset ('css/componetes.css')}}">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" >
+   
+   
+    <link rel="stylesheet" href="{{asset ('/css/cadastro.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"> 
 </head>
 @yield('css-view')  
 <body>
-    <div class="container">
+    
         
 
     @yield('conteudo-view')
     
-    </div>
+   
     
     @yield('css-view')  
     <script src="{{asset('js/app.js')}}" ></script>

@@ -20,9 +20,8 @@
         <div class="logo"><img src="{{asset ('/assets/imgs/brazão 3.png')}}" ></div>
            
            <div class="login"><i id="user" class="fas fa-user"> </i>
-           <p class="legend">Olá visitante! <br>Entre ou Casdatre-se! </p>
-          
-          </div>
+               <p class="legend">Olá visitante! <br>Entre ou Casdatre-se! </p>
+           </div>
                 <div class="carrinho"><i  id="car" class="fas fa-cart-arrow-down"></i>
                 <div class="rebar"></div>
                 </div>

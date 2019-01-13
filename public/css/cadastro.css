@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: none;
+    border: none;
+     
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+           -box-sizing: border-box;
+        }
+
+#box0{
+   position: absolute;
+   margin-top: 10%;
+   width: 84%;
+   height: 100%;
+   margin-left: 8%;
+}
+
+#box1{
+    top: 30px;
+    position: absolute;
+    height:300px; 
+    width: 540px;
+    border: 1px solid black;
+    
+}
+.L1{
+    top: 0%;
+    position: absolute;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 140% ;
+    
+}
+.form1{
+    border: 1px solid black;
+     height: 30px;
+     width: 30px;
+
+}
+label{
+    
+}
+
+
+.form2{}
+
+ 
+
+#box2{
+    top: 30px;
+    position: absolute;
+    height:300px; 
+    width: 540px;
+    left: 52.1%;
+    border: 1px solid black;   
+    
+}
+#box3{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    border: 1px solid black;
+    top: 350px;
+
+    
+
+}
+
+form [type="submit"]{
+    position: relative;
+    height: 80px;
+    width: 300px;
+    top:300px;
+    text-align:center;
+    float: right;
+    background-color: red;
+
+
+}

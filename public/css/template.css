@@ -34,26 +34,21 @@
 .bar-pesquisa .logo{
     position: relative;
     top: 20px;
-    left: 10%;
+    left: 8%;
      
 }
 .logo img{
-   
    height: 90px;
    width: 17%;
-    
-   
 }
 
 .bar-pesquisa .pesquisa{
    
     position: absolute; 
     top: 50px;
-    left: 35%;
+    left: 27.8%;
     height: 60px; 
-    width: 30%;   
-    border:1px solid #ccc ;
-    border-radius: 5px;
+    width: 38%;   
     background-color: white;
 }
 .pesquisa input[type='text']{
@@ -79,10 +74,10 @@
   
 
 
-.carrinho{
+ .carrinho{
      position: absolute;
-     left: 85%;
-     top: 25px;
+     left: 85.3%;
+     top: 40px;
      height: 60px;
      width: 5.5%;
      background-color: yellow;
@@ -102,29 +97,31 @@
      color: #E9556A;  
    } 
 
-.login{
-    position: absolute;
+.bar-pesquisa .login{
+    position: relative;
+    top: -45px;
     left: 67.5%;
-    top: 25px;
     height: 60px;
     width: 15%;
     font-size: 15px;
     background-color: transparent;
 }
+.login #user{
+    position: absolute;
+    font-size: 39px;
+    top:15px;
+    color: white;   
+ }
 .login .legend {
-    position: relative;
-    top: -36px;
-    left: 23%;
+    position: absolute;
+    top: 17px;
+    left: 20%;
     color: white;
     font-family: 'Lora', serif;  
    
 
 }
-.login #user{
-   font-size: 39px;
-   top:14px;
-   color: white;   
-}
+
     
  
     
@@ -144,11 +141,11 @@
 }
 
 
-.menu-icons {
-   position: absolute;
-   margin-top: 7px;
-   left: 10%;
-   height: 40px; 
+.menu .menu-icons{
+   position: relative;
+   top: 7px;
+   left: 8%;
+   height: 50px; 
    width: 18%;
    background-color:transparent;
     
@@ -156,13 +153,13 @@
 
 
 .menu-icons #icon_menu{
-   position: relative;
-   top: -10px;
+   position: absolute;
+   top: 10px;
    font-size: 15px;
    color: #ff3300;
 }
 .menu-icons .menu-tex{
-    position: relative;
+    position: absolute;
     top: 10px;
     left: 25px;
     color: #ff3300;

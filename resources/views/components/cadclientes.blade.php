@@ -8,70 +8,73 @@
 @endsection        
 
 @section('conteudo-view')
-<div id="box0" class="container">
-{!!Form::open(['route'=>'savacli','method'=>'post']) !!}
-
-<div id="box1" class="container">
-     <h1>Dados Pessoais</h1>
+ <div id="box0" class="">
+  {!!Form::open(['route'=>'savacli','method'=>'post']) !!}
+  
+  <div class="titul1"><h1 class="L1">Informações Pessoais</h1></div> 
+  
+  
+  <div id="box1" >
+     
 
      {!! csrf_field() !!}
 
 
 
-                     <label class="col-md-5">Nome
-                        {!!Form::text('nome',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
+                     <label class="">Nome
+                     <br>  {!!Form::text('nome',null,['class="form1"'=>'input', 'placeholder'=>""])!!} 
                      </label>
-                     <label class="col-md-5">Sobrenome
-                        {!!Form::text('sobrenome',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
+                     <label class="">Sobrenome
+                     <br>{!!Form::text('sobrenome',null,['class="form1"'=>'input', 'placeholder'=>""])!!} 
                      </label>
-                     <label class="col-md-5">Data de nascimento
-                        {!!Form::text('data_nascimento',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
+                     <label class="">Data de nascimento
+                     <br> {!!Form::text('data_nascimento',null,['class="form1"'=>'input', 'placeholder'=>""])!!} 
                      </label>
-                     <label class="col-md-5">Sexo
-                        {!!Form::text('sexo',null,['class="form-control"'=>'input', 'placeholder'=>"ex:111.111.111-00"])!!} 
+                     <label class="">CPF
+                     <br>   {!!Form::text('sexo',null,['class="form1"'=>'input', 'placeholder'=>"ex:111.111.111-00"])!!} 
                      </label>
-                     <label class="col-md-5">CPF
-                        {!!Form::text('cpf',null,['class="form-control"'=>'input', 'placeholder'=>"ex:111.111.111-00"])!!} 
+                     <label class="">
+                     <br>   {!!Form::text('cpf',null,['class="form1"'=>'input', 'placeholder'=>"ex:111.111.111-00"])!!} 
                      </label>
                
-                     <label class="col-md-4">Telefone fixo
-                        {!!Form::text('telefone_fixo',null,['class="form-control"'=>'input', 'placeholder'=>"Telefone Fixo"])!!} 
+                     <label class="">Telefone fixo
+                     <br>  {!!Form::text('telefone_fixo',null,['class="form1"'=>'input', 'placeholder'=>"Telefone Fixo"])!!} 
                      </label>
-                     <label class="col-md-4">Telefone Celular
-                        {!!Form::text('telefone_cel',null,['class="form-control"'=>'input', 'placeholder'=>"Telefone Celular"])!!} 
+                     <label class="">Telefone Celular
+                     <br> {!!Form::text('telefone_cel',null,['class="form1"'=>'input', 'placeholder'=>"Telefone Celular"])!!} 
                      </label>
                   
             
-</div>     
-      <div id="box2" class="container"> 
+  </div>     
+      <div id="box2" class=""> 
            <h1>Endereço</h1>
 
-           <label class="col-md-5">None do endereço
+           <label class="">None do endereço
 
                         {!!Form::text('nome_endereco',null,['class="form-control"'=>'input', 'placeholder'=>"Ex:casa"])!!} 
            </label>
-           <label class="col-md-5">Seu CEP:
+           <label class="">Seu CEP:
                         {!!Form::text('cep',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
            </label>
-           <label class="col-md-5">Endereço:
+           <label class="">Endereço:
                         {!!Form::text('endereco',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
            </label>
-           <label class="col-md-5">Numero:
+           <label class="">Numero:
                         {!!Form::text('numero',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
            </label>
-           <label class="col-md-5">Complemento:
+           <label class="">Complemento:
                         {!!Form::text('complemento',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
            </label>
-           <label class="col-md-5">Bairro:
+           <label class="">Bairro:
                         {!!Form::text('bairro',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
            </label>
-           <label class="col-md-5">Cidade:
+           <label class="">Cidade:
                         {!!Form::text('cidade',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
            </label>
-           <label class="col-md-5">Estado
+           <label class="">Estado
                         {!!Form::text('estado',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
            </label>
-           <label class="col-md-5">Referência:
+           <label class="">Referência:
                         {!!Form::text('referencia',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
            </label>
 
@@ -79,28 +82,28 @@
       </div>
       
       
-      <div id="box3" class="container">
+      <div id="box3" class="">
                      
             <h1>Dados de acesso</h1>
-            <label class="col-md-5">E-mail:
+            <label class="">E-mail:
                         {!!Form::text('email',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
             </label>
-          <!--  <label class="col-md-5">Confirmar e-mail:
+          <label class="">Confirmar e-mail:
                         {!!Form::text('email',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
-            </label> -->
-            <label class="col-md-5">Senha:
+            </label> 
+            <label class="">Senha:
                         {!!Form::text('senha',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
             </label>
-            <!--<label class="col-md-5">Confirmar senha:
+            <label class="">Confirmar senha:
                         {!!Form::text('senha',null,['class="form-control"'=>'input', 'placeholder'=>""])!!} 
-            </label> -->            
+            </label> 
 
       </div>
-      
-                        <label>
+                        <div class="btn"> 
+                        <label >
                            {!!Form::submit('Salvar')!!}         
                         </label>       
-      
+                        </div>
       
       {!!Form::close()!!}
 
