@@ -9,6 +9,7 @@
    
    
     <link rel="stylesheet" href="{{asset ('/css/cadastro.css')}}">
+    <link rel="stylesheet" href="{{asset ('fontawesome-free-5.6.3-web/css/all.min.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"> 
 </head>
 @yield('css-view')  
