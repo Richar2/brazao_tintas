@@ -16,6 +16,7 @@ Route::get('admin/produtos/cadastro','ProdutoController@produtosindex' )->name('
 Route::post('admin/produtos/savecad','ProdutoController@produtoscreate' )->name('admin.savacad');
 Route::get('index/login/new_cadastro','ClientesController@create')->name('cadcli');
 Route::get('home','HomerControllerller@home')->name('home');
+Route::get('dash','HomerControllerller@dash')->name('dash');
 Route::get('','SiteController@index');
 Route::get('carrinho/{id}/', 'CarrinhoController@getproduto')->name('carrinho');
 

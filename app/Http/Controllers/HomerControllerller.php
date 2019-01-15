@@ -10,4 +10,11 @@ class HomerControllerller extends Controller
     {
        return view('templates.home');
     }
+
+    public function dash(){
+        return view('components.dashcli');
+
+    }
+
+     
 }

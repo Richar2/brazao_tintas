@@ -1,0 +1,36 @@
+.dash{
+   position: relative;
+    padding: 10px;
+    left: 0px;
+    border-bottom: 1px solid #b3b3b3;
+    
+
+}
+.menu_dash{
+    position: absolute;
+   
+
+}
+h3 {
+    position: relative;
+    font-family: 'Titillium Web', sans-serif;
+    color: #8c8c8c;
+    left: 18px;
+    font-size:18px;
+}
+h3:hover{
+    color:#ff3300;
+    
+}
+i{
+    position: relative;
+    left:0px;
+    top: 25px;
+    font-size: 20px;
+    color: #8c8c8c;
+}
+
+a{
+    text-decoration:none;
+}
+    
