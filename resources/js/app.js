@@ -10,7 +10,8 @@ new Vue({
           produtos:[],
           fillproduto:{'id':'','nome_pro':'','descricao_pro':'' },  
         }
-      },
+    console.log('data');   
+    },
    
    
     methods:{
