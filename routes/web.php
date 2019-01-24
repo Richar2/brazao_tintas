@@ -12,16 +12,25 @@ use App\Http\Controllers\CarrinhoController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('admin/produtos/cadastro','ProdutoController@produtosindex' )->name('admin.produtocad');
-Route::post('admin/produtos/savecad','ProdutoController@produtoscreate' )->name('admin.savacad');
+
+//rotas publicas
+   
 Route::get('index/login/new_cadastro','ClientesController@create')->name('cadcli');
 //Route::get('home','HomerControllerller@home')->name('home');
+
+//rotas Clientes
+Route::post('/savecli','ClientesController@saveCli' )->name('savacli');
+Route::get('/updatecli','ClientesController@update' )->name('updatecli');
+
+
 Route::get('dash','HomerControllerller@dash')->name('dash');
 Route::get('','SiteController@index');
 Route::get('carrinho/{id}/', 'CarrinhoController@getproduto')->name('carrinho');
 
-Route::post('/savecli','ClientesController@saveCli' )->name('savacli');
-Route::get('/updatecli','ClientesController@update' )->name('updatecli');   
+//rotas admin
+Route::get('admin/produtos/cadastro','ProdutoController@produtosindex' )->name('admin.produtocad');
+Route::post('admin/produtos/savecad','ProdutoController@produtoscreate' )->name('admin.savacad');
+
 Route::get('admin/produtos','ProdutoController@tableProd' )->name('admin.produtos');
 Route::get('admin/tableprod','ProdutoController@componetProd' )->name('componet_1.produtos');
 Route::put('admin/updateprod/{id}','ProdutoController@update')->name('componet_2.produtos');
@@ -31,4 +40,4 @@ Route::put('admin/updateprod/{id}','ProdutoController@update')->name('componet_2
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin', 'HomeController@index')->name('home');
