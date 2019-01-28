@@ -18,7 +18,7 @@ class ProdutoController extends Controller
         //$cat= Categorias::get();
        //return $prod;
        
-       return view('components.tabelaprod');
+       return view('vendor.adminlte.conponentsadmin.produtos');
     }
     public function componetProd()
     {
