@@ -34,6 +34,7 @@ Route::post('admin/produtos/savecad','ProdutoController@produtoscreate' )->name(
 Route::get('admin/produtos','ProdutoController@tableProd' )->name('admin.produtos');
 Route::get('admin/tableprod','ProdutoController@componetProd' )->name('componet_1.produtos');
 Route::put('admin/updateprod/{id}','ProdutoController@update')->name('componet_2.produtos');
+Route::delete('admin/deleteprod/{id}','ProdutoController@destroy')->name('componet_3.produtos');
 //Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');

@@ -25,8 +25,8 @@
             <td>@{{produto.nome_pro}}</td>
             <td>@{{produto.descricao_pro}}</td>
             <td></td>
-            <td><a href="#" class="btn btn-danger btn-sm" v-on:click.prevent="editprod(produto)">Editar</a>
-                <a href="#" class="btn btn-danger btn-sm" v-on:click.prevent="editprod(produto)">Deletar</a>
+            <td><a href="#" class="btn btn-primary btn-sm" v-on:click.prevent="editprod(produto)">Editar</a>
+                <a href="#" class="btn btn-danger btn-sm" v-on:click.prevent="deleteprod(produto.id)">Deletar</a>
 
             </td>
             </tr>

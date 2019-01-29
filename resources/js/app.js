@@ -48,9 +48,16 @@ new Vue({
         });
         console.log(url);
 
-        } 
+        }, 
 
-       
+       deleteprod:function(id){
+        var url='deleteprod/'+ id;
+        axios.delete(url).then(response=>{
+            this.getProdutos(); 
+        });
+        //alert('id'); 
+        console.log(url); 
+      } ,
     }
     
   });
