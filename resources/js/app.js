@@ -53,7 +53,8 @@ new Vue({
        deleteprod:function(id){
         var url='deleteprod/'+ id;
         axios.delete(url).then(response=>{
-            this.getProdutos(); 
+            this.getProdutos();
+            toastr.success('Produto eleminado com sucesso!'); 
         });
         //alert('id'); 
         console.log(url); 

@@ -13,10 +13,19 @@ const mix = require('laravel-mix');
    mix.scripts([
       'node_modules/vue/dist/vue.js',
       'node_modules/axios/dist/axios.js',
+      'node_modules/bootstrap/dist/bootstrap.js',
+      'node_modules/toastr/toastr.js',
 
        
       'resources/js/app.js',
-   ],   'public/js/app.js');
+   ],   'public/js/app.js')
    
-//mix.js('resources/js/app.js', 'public/js')
+   .styles([
+      'node_modules/toastr/build/toastr.css',
+      'node_modules/bootstrap/scss/bootstrap.scss',
+   
+   ],  'public/css/app.css');  
+
+
+   //mix.js('resources/js/app.js', 'public/js')
   // .sass('resources/sass/app.scss', 'public/css');
