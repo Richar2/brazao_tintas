@@ -20,9 +20,24 @@ class ProdutoController extends Controller
        
        return view('vendor.adminlte.conponentsadmin.produtos');
     }
-    public function componetProd()
+    public function componetProd(Request $request)
     {
-       return  $prod= Produto::orderBy('id', 'DESC')->get();  
+        $prod= Produto::orderBy('id', 'DESC')->paginate(3);  
+    
+        return [
+            'pagination'=>[
+                'total'        => $prod->total(),
+                'current_page' => $prod->currentPage(),
+                'per_page'     => $prod->perPage(),
+                'last_page'    => $prod->lastPage(),
+                'fron'         => $prod->firstItem(),
+                'to'           => $prod->lastPage(),
+        
+            ],
+            'prod'=>$prod
+        ];   
+    
+    
     }
     
     
